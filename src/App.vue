@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="white" dark>
+      <v-container fluid>
+        <v-layout justify-center align-center>
+          <v-flex shrink>
+            <img src="../public/logo.webp"/>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-app-bar>
+
+    <v-main>
+      <TableHome/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TableHome from './components/TableHome.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    TableHome
+},
+
+  data: () => ({
+    //
+  }),
+};
+</script>
