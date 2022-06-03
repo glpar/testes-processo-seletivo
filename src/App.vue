@@ -1,33 +1,23 @@
 <template>
   <v-app>
-    <v-app-bar app color="white" dark>
-      <v-container fluid>
-        <v-layout justify-center align-center>
-          <v-flex shrink>
-            <img src="../public/logo.webp"/>
-          </v-flex>
-        </v-layout>
-      </v-container>
+    <v-app-bar app color="white">
+      <div class="d-flex align-center mr-2">
+        Oi
+      </div>
+      <v-btn to="/operators" text>
+        Tutorials
+      </v-btn>
+      <v-btn to="/add" text>
+        Add
+      </v-btn>
     </v-app-bar>
-
     <v-main>
-      <TableHome/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
-
 <script>
-import TableHome from './components/TableHome.vue';
-
 export default {
-  name: 'App',
-
-  components: {
-    TableHome
-},
-
-  data: () => ({
-    //
-  }),
+  name: "app",
 };
 </script>
