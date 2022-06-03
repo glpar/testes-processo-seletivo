@@ -4,117 +4,117 @@
     <v-form ref="form" lazy-validation>
       <v-text-field
           v-model="currentOperator.registro"
-          :rules="[(v) => !!v || 'Registro ANS is required']"
+          :rules="[(v) => !!v || 'Registro ANS is missing']"
           label="Registro_ANS"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.cnpj"
-          :rules="[(v) => !!v || 'CNPJ is required']"
+          :rules="[(v) => !!v || 'CNPJ is missing']"
           label="CNPJ"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.razao_social"
-          :rules="[(v) => !!v || 'Razão Social is required']"
+          :rules="[(v) => !!v || 'Razão Social is missing']"
           label="Razao_Social"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.fantasia"
-          :rules="[(v) => !!v || 'Nome Fantasia is required']"
+          :rules="[(v) => !!v || 'Nome Fantasia is missing']"
           label="Nome_Fantasia"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.modalidade"
-          :rules="[(v) => !!v || 'Modalidade is required']"
+          :rules="[(v) => !!v || 'Modalidade is missing']"
           label="Modalidade"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.logradouro"
-          :rules="[(v) => !!v || 'Logradouro is required']"
+          :rules="[(v) => !!v || 'Logradouro is missing']"
           label="Logradouro"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.numero"
-          :rules="[(v) => !!v || 'Numero is required']"
+          :rules="[(v) => !!v || 'Numero is missing']"
           label="Numero"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.complemento"
-          :rules="[(v) => !!v || 'Complemento is required']"
+          :rules="[(v) => !!v || 'Complemento is missing']"
           label="Complemento"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.bairro"
-          :rules="[(v) => !!v || 'Bairro is required']"
+          :rules="[(v) => !!v || 'Bairro is missing']"
           label="Bairro"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.cidade"
-          :rules="[(v) => !!v || 'Cidade is required']"
+          :rules="[(v) => !!v || 'Cidade is missing']"
           label="Cidade"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.uf"
-          :rules="[(v) => !!v || 'UF is required']"
+          :rules="[(v) => !!v || 'UF is missing']"
           label="UF"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.cep"
-          :rules="[(v) => !!v || 'CEP is required']"
+          :rules="[(v) => !!v || 'CEP is missing']"
           label="CEP"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.ddd"
-          :rules="[(v) => !!v || 'DDD is required']"
+          :rules="[(v) => !!v || 'DDD is missing']"
           label="DDD"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.telefone"
-          :rules="[(v) => !!v || 'Telefone is required']"
+          :rules="[(v) => !!v || 'Telefone is missing']"
           label="Telefone"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.fax"
-          :rules="[(v) => !!v || 'Fax is required']"
+          :rules="[(v) => !!v || 'Fax is missing']"
           label="Fax"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.email"
-          :rules="[(v) => !!v || 'E-mail is required']"
+          :rules="[(v) => !!v || 'E-mail is missing']"
           label="E-mail"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.representante"
-          :rules="[(v) => !!v || 'Representante is required']"
+          :rules="[(v) => !!v || 'Representante is missing']"
           label="Representante"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.cargo"
-          :rules="[(v) => !!v || 'Cargo is required']"
+          :rules="[(v) => !!v || 'Cargo is missing']"
           label="Cargo"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.data_registro"
-          :rules="[(v) => !!v || 'Data is required']"
+          :rules="[(v) => !!v || 'Data is missing']"
           label="Data"
-          required
+          
         ></v-text-field>
       <v-btn color="error" small class="mr-2" @click="deleteOperator">
         Delete
@@ -126,7 +126,7 @@
     <p class="mt-3">{{ message }}</p>
   </div>
   <div v-else>
-    <p>Please click on a Tutorial...</p>
+    <p>Please click on a operator...</p>
   </div>
 </template>
 <script>
@@ -187,7 +187,7 @@ export default {
       OperatorDataService.update(this.currentOperator.id, this.currentOperator)
         .then((response) => {
           console.log(response.data);
-          this.message = "The tutorial was updated successfully!";
+          this.message = "The Operator was updated successfully!";
         })
         .catch((e) => {
           console.log(e);

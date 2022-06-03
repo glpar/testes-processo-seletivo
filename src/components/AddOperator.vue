@@ -1,6 +1,6 @@
 <template>
   <div class="submit-form mt-3 mx-auto">
-    <p class="headline">Add Tutorial</p>
+    <p class="headline">Add Operators</p>
     <div v-if="!submitted">
       <v-form ref="form" lazy-validation>
         <v-text-field
@@ -126,7 +126,7 @@
           Submitted successfully!
         </v-card-title>
         <v-card-subtitle>
-          Click the button to add new Tutorial.
+          Click the button to add new Operator.
         </v-card-subtitle>
         <v-card-actions>
           <v-btn color="success" @click="newOperator">Add</v-btn>

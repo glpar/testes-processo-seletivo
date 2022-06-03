@@ -1,10 +1,10 @@
 module.exports = (sequelize, Sequelize) => {
     const Operator = sequelize.define("operator", {
         registro: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
         cnpj: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
         razao_social: {
         type: Sequelize.STRING
@@ -19,7 +19,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
         numero: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
         complemento: {
         type: Sequelize.STRING
@@ -34,16 +34,16 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
       cep: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       ddd: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       telefone: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       fax: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       email: {
         type: Sequelize.STRING
@@ -58,9 +58,6 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
 
-      published: {
-        type: Sequelize.BOOLEAN
-      }
     });
     return Operator;
   };
