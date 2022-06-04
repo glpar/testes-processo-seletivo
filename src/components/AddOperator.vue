@@ -11,111 +11,110 @@
         ></v-text-field>
         <v-text-field
           v-model="operator.cnpj"
-          :rules="[(v) => !!v || 'CNPJ is required']"
+          :rules="[(v) => !!v || 'CNPJ is missing']"
           label="CNPJ"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.razao_social"
-          :rules="[(v) => !!v || 'Razão Social is required']"
+          :rules="[(v) => !!v || 'Razão Social is missing']"
           label="Razao_Social"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.fantasia"
-          :rules="[(v) => !!v || 'Nome Fantasia is required']"
+          :rules="[(v) => !!v || 'Nome Fantasia is missing']"
           label="Nome_Fantasia"
-          required
         ></v-text-field>
         <v-text-field
           v-model="operator.modalidade"
-          :rules="[(v) => !!v || 'Modalidade is required']"
+          :rules="[(v) => !!v || 'Modalidade is missing']"
           label="Modalidade"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.logradouro"
-          :rules="[(v) => !!v || 'Logradouro is required']"
+          :rules="[(v) => !!v || 'Logradouro is missing']"
           label="Logradouro"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.numero"
-          :rules="[(v) => !!v || 'Numero is required']"
+          :rules="[(v) => !!v || 'Numero is missing']"
           label="Numero"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.complemento"
-          :rules="[(v) => !!v || 'Complemento is required']"
+          :rules="[(v) => !!v || 'Complemento is missing']"
           label="Complemento"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.bairro"
-          :rules="[(v) => !!v || 'Bairro is required']"
+          :rules="[(v) => !!v || 'Bairro is missing']"
           label="Bairro"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.cidade"
-          :rules="[(v) => !!v || 'Cidade is required']"
+          :rules="[(v) => !!v || 'Cidade is missing']"
           label="Cidade"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.uf"
-          :rules="[(v) => !!v || 'UF is required']"
+          :rules="[(v) => !!v || 'UF is missing']"
           label="UF"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.cep"
-          :rules="[(v) => !!v || 'CEP is required']"
+          :rules="[(v) => !!v || 'CEP is missing']"
           label="CEP"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.ddd"
-          :rules="[(v) => !!v || 'DDD is required']"
+          :rules="[(v) => !!v || 'DDD is missing']"
           label="DDD"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.telefone"
-          :rules="[(v) => !!v || 'Telefone is required']"
+          :rules="[(v) => !!v || 'Telefone is missing']"
           label="Telefone"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.fax"
-          :rules="[(v) => !!v || 'Fax is required']"
+          :rules="[(v) => !!v || 'Fax is missing']"
           label="Fax"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.email"
-          :rules="[(v) => !!v || 'E-mail is required']"
+          :rules="[(v) => !!v || 'E-mail is missing']"
           label="E-mail"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.representante"
-          :rules="[(v) => !!v || 'Representante is required']"
+          :rules="[(v) => !!v || 'Representante is missing']"
           label="Representante"
-          required
+          
         ></v-text-field>
         <v-text-field
           v-model="operator.cargo"
-          :rules="[(v) => !!v || 'Cargo is required']"
+          :rules="[(v) => !!v || 'Cargo is missing']"
           label="Cargo"
-          required
+         
         ></v-text-field>
         <v-text-field
           v-model="operator.data_registro"
-          :rules="[(v) => !!v || 'Data is required']"
+          :rules="[(v) => !!v || 'Data is missing']"
           label="Data"
-          required
+          
         ></v-text-field>
       </v-form>
       <v-btn color="primary" class="mt-3" @click="saveOperator">Submit</v-btn>

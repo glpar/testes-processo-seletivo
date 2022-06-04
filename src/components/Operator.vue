@@ -7,11 +7,13 @@
           :rules="[(v) => !!v || 'Registro ANS is missing']"
           label="Registro_ANS"
           
+          
         ></v-text-field>
         <v-text-field
           v-model="currentOperator.cnpj"
           :rules="[(v) => !!v || 'CNPJ is missing']"
           label="CNPJ"
+          
           
         ></v-text-field>
         <v-text-field
